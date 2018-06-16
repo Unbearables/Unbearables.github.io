@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset=UTF-8>
+	<meta name="description" content="Šibenice hra">
+	<meta name="keywords" content="šibenice,hra,oběšenec,slova">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Šibenice</title>
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="./main.css" type="text/css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<header>
+			<h1>ŠIBENICE</h1>	
+		</header>
+		
+		<div class="kategorie">
+			<div class="kategorie__box" data-val="kat1">
+				<span class="kategorie__select">Věci</span>
+			</div>
+			<div class="kategorie__box" data-val="kat2">
+				<span class="kategorie__select">Zvířata</span>
+			</div>
+			<div class="kategorie__box" data-val="kat3">
+				<span class="kategorie__select">Geografie</span>
+			</div>
+			<div class="kategorie__box" data-val="kat4">
+				<span class="kategorie__select">Webové technologie</span>
+			</div>
+		</div>
+	
+		<div id="hra">
+			<div id="opratka">
+				<img id="opratkaIMG" src="./obr/blank.png">
+			</div>
+			
+			<div id="hadani">
+				<input id="letter" type="text" style="text-transform:uppercase" autofocus maxlength=1/>
+				<input id="hadejbtn" type="submit" value="Hádej"/>
+				<p id="answer"></p>
+			</div>
+		</div>
+
+		<div id="popup">
+			<h1>Konec hry</h1>		
+			<p id="message"></p>
+			<p id="konecSlovo"></p>	
+			<div id="staty">
+				<p id="stat"></p>
+				<p id="highScore"></p>
+			</div>			
+			<h1>Hraj znovu</h1>
+		</div>
+		
+		<footer>
+			<div>
+				<p>zpracoval:</p>
+				<p>David Hořák</p>
+			</div>	
+		</footer>
+
+	</div>
+	
+<script src="./dictionaries.js"></script>
+<script src="./app.js"></script>
+	
+</body>
+</html>
