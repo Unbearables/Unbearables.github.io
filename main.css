@@ -93,7 +93,7 @@ header h1{
 
 .kategorie{
 	position: fixed;
-	background:#00aced;
+	background:#0399cf;
 	height: 50vh;
 	width: 50vh;
 	/* RELATIVNI VELIKOST K VIEWPORTU */
@@ -129,6 +129,12 @@ header h1{
 	        align-items: center;	
 	text-align: center;
 }
+
+.kategorie__box:hover{
+	background: #00aced;
+}
+
+
 /* footer */
 footer {
 	padding: 1em;
